@@ -1,149 +1,82 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<style>
-		#table1{
-			width:100%;
-			/* text-align:center */
-			}
-		td,th{
-			border:1px solid black;
-			border-collapse:collapse;
-			border-spacing:1px;
-			padding:1px
-		}
-
-		#table2{
-			width:100%;
-			}
-		td,th{
-			border:1px solid black;
-			border-collapse:collapse;
-			border-spacing:1px;
-			padding:1px
-		}
-		#table{
-			width:100%
-		}
-		.g{background-color:green}
-		.b{background-color:blue}
-
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<table id="table1">
-	<caption>HTML Assignment 3</caption>
-	<thead>
-	<tr id="t11">
-	<td>Left</td>
-	<td>Center</td>
-	<td>Right</td>
-	</tr>
-	</thead
 
-	<tbody>
-	<tr id="t12">
-	<td>Left</td>
-	<td>Center</td>
-	<td>Right</td>
-	</tr>
+  <!-- First Table -->
+  <table id="table-1" class="middle">
+    <tr>
+      <td id="t11">left</td>
+      <td id="t12" class="center">center</td>
+      <td id="t13" class="right">right</td>
+    </tr>
+    <tr>
+      <td>left</td>
+      <td class="center">center</td>
+      <td class="right">right</td>
+    </tr>
+    <tr>
+      <td>left</td>
+      <td class="center">center</td>
+      <td class="right">right</td>
+    </tr>
+  </table>
 
-	<tr id="t13">
-	<td>Left</td>
-	<td>Center</td>
-	<td>Right</td>
-	</tr>
-	</tbody>
-	</table>
+  <br>
 
-	
-	<table id="table2">
-		<thead>
-		<tr id="t21">
-		<td colspan="6"></td>
-		<!-- <td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td> -->
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-		<td rowspan="4"></td>
-		<!-- <td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td> -->
-		</tr>
+  <!-- Second Table -->
+  <table id="table-2" class="middle">
+    <tr>
+      <td id="t21" colspan="6"></td>
+    </tr>
+    <tr>
+      <td rowspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="5"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
 
-		<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		</tr>
+  <br>
 
-		<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		</tr>
-
-		<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		</tr>
-
-		<tr>
-		<td colspan="6"></td>
-		<!-- <td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td> -->
-		</tr>
-		
-		</tbody>
-		
-	</table>
-
-	<table id="table-3">
-		<thead>
-			
-		</thead>
-		<tbody>
-			<tr class="g">
-				<td></td>
-			</tr>
-
-		<tr id="t-image">
-			<td><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg"</td>
-		</tr>
-		<tr class="b">
-			<td></td>
-		</tr>
-		</tbody>
-	</table>
-	
-    <script type="text/javascript" src="./script.js">
-</script>
+  <!-- Third Table -->
+  <table id="table-3" class="middle">
+    <tr class="green">
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td id="t-image">
+        <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Basketball Dunk" ">
+      </td>
+    </tr>
+    <tr class="blue">
+      <td colspan="2"></td>
+    </tr>
+  </table>
 
 </body>
-
 </html>
